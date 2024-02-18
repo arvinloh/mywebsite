@@ -35,7 +35,7 @@ html[data-theme='light'] .hero {
 }
 
 html[data-theme='dark'] .hero {
-  background-image: linear-gradient(to right, rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url("/static/img/hero-dark-image.jpeg");
+  background-image: linear-gradient(to right, rgba(0, 128, 128, 0.7), rgba(0, 128, 128, 0.7)), url("/static/img/hero-light-image.jpeg");
   background-size: cover;
   background-position: center;
 }

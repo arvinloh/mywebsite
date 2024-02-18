@@ -15,7 +15,7 @@ function HomepageHeader() {
       <header className={clsx("hero hero--primary", styles.heroBanner)}>
         <div className="container">
           <img
-            src={`https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=50&duration=2000&pause=300&color=${document.documentElement.getAttribute("data-theme") === "dark" ? "36BCF7FF" : "90EE90"}&center=true&vCenter=true&multiline=true&repeat=false&random=false&width=1300&height=140&lines=Welcome to Arvin's Tavern+%F0%9F%8C%B1`}
+            src={`https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=50&duration=2000&pause=300&color=90EE90&center=true&vCenter=true&multiline=true&repeat=false&random=false&width=1300&height=140&lines=Welcome to Arvin's Tavern+%F0%9F%8C%B1`}
             alt="Welcome to Arvin's Tavern"
             style={{ width: "100%" }}
           />
