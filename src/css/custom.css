@@ -45,12 +45,22 @@ html[data-theme='dark'] .hero {
 
 /* Apply Fira Code font globally */
 body {
-  font-family: 'Fira Code', monospace;
+  font-family: 'Helvetica Neue', sans-serif; /* Example of using a different font */
 }
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Helvetica Neue', Arial, sans-serif; /* Example of using a different font */
+  font-family: 'Fira Code', monospace;
+}
+
+/* Navbar fonts */
+.navbar__title {
+  font-family: 'Roboto', monospace;
+}
+
+/* Navbar body fonts */
+.navbar__items {
+  font-family: 'Fira Code', monospace;
 }
 
 /* Navigation links */
