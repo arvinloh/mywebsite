@@ -6,13 +6,13 @@ import { FaArrowRight } from 'react-icons/fa'; // Import the arrow icon
 const FeatureList = [
   {
     title: 'Study Notes',
-    imgUrl: require('./tcetOpenSource.png').default,
+    imgUrl: require('./notes.png').default,
     link: '/study-notes/overview',
-    description: "My Study Notes",
+    description: "I write some notes when I study",
   },
   {
     title: 'Blog',
-    imgUrl: require('./FlagshipProjects.png').default,
+    imgUrl: require('./blog.png').default,
     link: '/blog',
     description: "I write here occasionally",
   },
@@ -38,7 +38,7 @@ const Feature = ({ title, description, imgUrl, link }) => {
       <div className="text--center padding-horiz--md">
         <h3>{title}</h3>
         <img src={imgUrl} className={styles.featureSvg} alt={title} />
-        <p>{description}</p>
+        <p className={styles.description}>{description}</p> {/* Updated line */}
         <span className={styles.arrowIcon}><FaArrowRight /></span>
       </div>
     </div>

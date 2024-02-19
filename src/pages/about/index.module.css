@@ -34,4 +34,12 @@
     font-size: 1.2em;
     font-weight: bold;
   }
+  .centerImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%; /* Makes the image circular */
+  }
+  
+  
   

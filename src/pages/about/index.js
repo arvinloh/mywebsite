@@ -7,7 +7,7 @@ import AboutpageFeatures from "@site/src/components/AboutpageFeatures";
 
 import styles from "./index.module.css";
 
-function HomepageHeader() {
+function AboutpageHeader() {
   const { siteConfig } = useDocusaurusContext();
   
   return (
@@ -27,58 +27,17 @@ function HomepageHeader() {
                       </summary>
                     </ul>
                   </div>
-
-                  <hr />
-
-                  <h3>Skills & Understanding Of</h3>
-
-                  <p>
-                    • JavaScript | TypeScript | C++ | C | Python | Tailwind CSS
-                    | Node JS | Express | React | jQuery | NoSQL | SQL |
-                    Postgres | MongoDB | MySQL | Git | Github | HTML | CSS |
-                    Bootstrap | Handlebars | Java | Power BI | MS Office
-                  </p>
-
-                  <p>
-                    • AWS | Cloud Computing | CI/CD | Firebase | Docusaurus |
-                    Docker | Moc OS | Linux | OOP | Digital Ocean | Photoshop |
-                    Postman | Google Cloud | System Design | Operating System |
-                    Data Structures | Search Engine Optimization
-                  </p>
-
-                  <p>
-                    • Technical Writing and Documentation | Open Source | Devops
-                    | System Administrator | Frontend | Backend | Full-Stack
-                  </p>
-
-                  <p>
-                    - 🔭 I’m currently working on{" "}
-                    <a href="https://github.com/Stats-For-My-Uni/statsForMyUni">
-                      Stats For My Uni
-                    </a>
-                  </p>
-
-                  <p>
-                    - 🌱 I’m currently learning Scalable Backend and Databases.
-                  </p>
-
-                  <p>
-                    - ☁️ I've keen interest in Artificial Intelligence and
-                    Machine Learning. So,I'm learning Tensor Flow
-                  </p>
-
-                  <p>
-                    - 📫 Feel free to reach me out{" "}
-                    <a href="mailto:hackathon2mj@gmail.com">
-                      hackathon2mj@gmail.com
-                    </a>
-                  </p>
-
                   <img
-                    height={"20px"}
-                    src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"
-                    alt="Meet's gif"
-                  />
+                  src="/img/me.jpeg"
+                  alt=""
+                  className={clsx(styles.centerImage)}
+                  width="300px"
+                />
+                  <div>
+
+                  <h3><button type="button" class="btn btn-primary display--1"> <a href="https://drive.google.com/file/d/113on7gjXffQKw98PI1-9Ziqu6nPHrHro/view?usp=sharing"> Resume 💾</a></button></h3>
+                  </div>
+                  <hr />
                 </div>
 
                 <br />
@@ -197,9 +156,54 @@ export default function Home() {
       title={`Hello 👋 from Arvin`}
       description="Description will go into a meta tag in <head />"
     >
-      <HomepageHeader />
-      <main>
+      <AboutpageHeader />
         <AboutpageFeatures />
+        <main style = {{padding : '50px 500px'}}>
+
+        <h3>Skills & Understanding Of</h3>
+
+                  <p>
+                    • JavaScript | TypeScript | C++ | C | Python | Tailwind CSS
+                    | Node JS | Express | React | jQuery | NoSQL | SQL |
+                    Postgres | MongoDB | MySQL | Git | Github | HTML | CSS |
+                    Bootstrap | Handlebars | Java | Power BI | MS Office
+                  </p>
+
+                  <p>
+                    • AWS | Cloud Computing | CI/CD | Firebase | Docusaurus |
+                    Docker | Moc OS | Linux | OOP | Digital Ocean | Photoshop |
+                    Postman | Google Cloud | System Design | Operating System |
+                    Data Structures | Search Engine Optimization
+                  </p>
+
+                  <p>
+                    • Technical Writing and Documentation | Open Source | Devops
+                    | System Administrator | Frontend | Backend | Full-Stack
+                  </p>
+
+                  <p>
+                    - 🔭 I’m currently working on{" "}
+                    <a href="https://github.com/Stats-For-My-Uni/statsForMyUni">
+                      Stats For My Uni
+                    </a>
+                  </p>
+
+                  <p>
+                    - 🌱 I’m currently learning Scalable Backend and Databases.
+                  </p>
+
+                  <p>
+                    - ☁️ I've keen interest in Artificial Intelligence and
+                    Machine Learning. So,I'm learning Tensor Flow
+                  </p>
+
+                  <p>
+                    - 📫 Feel free to reach me out{" "}
+                    <a href="mailto:hackathon2mj@gmail.com">
+                      hackathon2mj@gmail.com
+                    </a>
+                  </p>
+
       </main>
     </Layout>
   );

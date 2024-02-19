@@ -78,3 +78,8 @@
     padding: 0.8rem;
   }
 }
+
+.description {
+  font-size: 20px; /* Adjust as needed */
+  font-family: 'Fira Code', monospace; /* Fallback to monospace if Fira Code is not available */
+}
