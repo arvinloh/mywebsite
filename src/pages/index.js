@@ -57,13 +57,6 @@ function HomepageHeader() {
 
                   <hr />
 
-                  <a href="https://holopin.io/@mj123">
-                    <img
-                      src="https://holopin.me/mj123"
-                      alt="An image of @mj123's Holopin badges, which is a link to view their full Holopin profile"
-                    />
-                  </a>
-
                   <h3>Skills & Understanding Of</h3>
 
                   <p>
