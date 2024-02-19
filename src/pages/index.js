@@ -30,7 +30,7 @@ function HomepageHeader() {
           <div className={styles.buttons}>
             <Link
               className="button button--secondary button--lg"
-              to="/docs/intro"
+              to="/about"
             >
           <img className={styles['cat-gif']} src="/img/cat_walking.gif" height="30" />
           <span className={styles['about-me']}>About Me</span>

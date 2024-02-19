@@ -75,15 +75,15 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: "img/docusaurus-social-card.jpg",
+      image: "img/graphic_programmer.jpg",
 
       /**
        * * Highlight: added default color mode as dark
        **/
       colorMode: {
         defaultMode: "dark",
-        disableSwitch: false,
-        respectPrefersColorScheme: false,
+        disable: false,
+        respectPrefersColorScheme: true,
       },
       /**
        * * Highlight: adding hideable sidebar
@@ -106,16 +106,12 @@ const config = {
         textColor: "#574476",
         isCloseable: false,
       },
-      navbar: {
+    navbar: {
         title: "Arvin",
         logo: {
           alt: "My Site Logo",
           src: "img/transparent-arvin-profile.png",
-          // srcDark: 'img/logo_dark.png',
-          // width: 50,
-          // Height: 300,
           className: "custom-navbar-logo-class",
-          // style: {border: 'solid grey'},
         },
         items: [
           {
@@ -126,11 +122,12 @@ const config = {
           },
           { to: "/study-notes", label: "Study Notes", position: "left" },
           { to: "/blog", label: "Blog", position: "left" },
-          {
-            href: `https://github.com/arvinloh`,
-            label: "GitHub Repo",
-            position: "left",
-          },
+          { to: "/about", label: "About", position: "left" }, // Assuming the route to your about.js page is '/about'
+          // {
+          //   href: `https://github.com/arvinloh`,
+          //   label: "GitHub Repo",
+          //   position: "left",
+          // },
           {
             href: "https://github.com/arvinloh",
             position: "right",
@@ -162,59 +159,6 @@ const config = {
             </svg>
             `,
           },
-          // {
-          //   href: 'https://twitter.com/LogicnMotive',
-          //   position: 'right',
-          //   className: 'navbar-icon navbar-icon-twitter',
-          //   'aria-label': 'Twitter page',
-          //   html: `<svg
-          //       stroke="currentColor"
-          //       fill="currentColor"
-          //       stroke-width="0"
-          //       viewBox="0 0 50 50"
-          //       height="26" width="26"
-          //       xmlns="http://www.w3.org/2000/svg">
-          //     <path d="M 11 4 C 7.134 4 4 7.134 4 11 L 4 39 C 4 42.866 7.134 46 11 46 L 39 46 C 42.866 46 46 42.866 46 39 L 46 11 C 46 7.134 42.866 4 39 4 L 11 4 z M 13.085938 13 L 21.023438 13 L 26.660156 21.009766 L 33.5 13 L 36 13 L 27.789062 22.613281 L 37.914062 37 L 29.978516 37 L 23.4375 27.707031 L 15.5 37 L 13 37 L 22.308594 26.103516 L 13.085938 13 z M 16.914062 15 L 31.021484 35 L 34.085938 35 L 19.978516 15 L 16.914062 15 z"></path>
-          //       </svg>`,
-          // },
-          // {
-          //   href: 'http://discordapp.com/users/1053004379424309358',
-          //   position: 'right',
-          //   className: 'navbar-icon',
-          //   'aria-label': 'Discord Username - hyunski',
-          //   html: `<svg
-          //   stroke="currentColor"
-          //   fill="currentColor"
-          //   stroke-width="0"
-          //   viewBox="0 0 640 512"
-          //   height="26"
-          //   width="26"
-          //   xmlns="http://www.w3.org/2000/svg">
-          //   <path d="M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z"></path></svg>`,
-          // },
-          {
-            href: "mailto:arvinhaykwanming@gmail.com",
-            position: "right",
-            className: "navbar-icon ",
-            "aria-label": "Email",
-            html: `<svg 
-                stroke="currentColor" 
-                fill="currentColor" 
-                stroke-width="0" 
-                viewBox="0 0 35 35" 
-                height="26" 
-                width="26" 
-                xmlns="http://www.w3.org/2000/svg">
-                
-                <path d="M29 4H3a3 3 0 0 0-3 3v18a3 3 0 0 0 3 3h26a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm-.72 2L16 14.77 3.72 6zM30 25a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7.23l13.42 9.58a1 1 0 0 0 1.16 0L30 7.23z"/>
-                </svg>`,
-          },
-
-          // {
-          //   href: 'https://linktr.ee/mj665',
-          //   label: 'Link Tree',
-          //   position: 'right',
-          // },
         ],
       },
       footer: {
