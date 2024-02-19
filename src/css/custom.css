@@ -39,3 +39,21 @@ html[data-theme='dark'] .hero {
   background-size: cover;
   background-position: center;
 }
+
+/* Import Fira Code font */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+
+/* Apply Fira Code font globally */
+body {
+  font-family: 'Fira Code', monospace;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Helvetica Neue', Arial, sans-serif; /* Example of using a different font */
+}
+
+/* Navigation links */
+.navbar__link {
+  font-family: inherit; /* Use the font inherited from the parent element */
+}
