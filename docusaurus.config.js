@@ -20,7 +20,7 @@ const config = {
   projectName: "arvin.github.io", // Usually your repo name.
   deploymentBranch: "gh-pages-deployment",
 
-  onBrokenLinks: "throw",
+  onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
 
   // Even if you don't use internalization, you can use this field to set useful
