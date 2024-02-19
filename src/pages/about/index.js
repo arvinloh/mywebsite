@@ -40,107 +40,85 @@ function AboutpageHeader() {
                       </button>
                     </h3>
                   </div>
+                  <ul style={{ textAlign: 'center' }}>
+                    Feel free to reach out on {" "}
+                    <a href="https://www.linkedin.com/in/arvinloh-/">
+                      LinkedIn
+                    </a> or on Discord (hyunski)
+                    
+                    </ul>
                   <hr />
                 </div>
 
                 <br />
-                <h2 className="text--center text-margin--lg">
+                <h1 className="text--center text-margin--lg">
                   <span className="badge badge--primary">Who am I?</span>
-                </h2>
+                </h1>
                 <h3 className="text--center text-margin-lg">
-                  A Web Developer & Open Source enthusiast who loves to create
-                  stunning and functional websites.
+                  A university student that is passionate about technology and writing
                 </h3>
                 <p>
-                  I am <strong>Meet Jain</strong> in my second year of
-                  engineering student at Thakur college of engineering, Mumbai
-                  also enrolled in foundation level IIT Madras online BS Degree
-                  program. I am very passionate about programming & development
-                  and eager achieve something extraordinary in my life. I always
-                  try to learn something new, always in search of new
-                  opportunities to participate in different programs, remain to
-                  be consistent towards my work and academics and always try to
-                  be a progressive person. My Qualities- punctuality,
-                  confidence, leader, and curious about new things.
+                  I am <strong>Arvin Hay</strong> in my second year of
+                  Bachelor of Science in Computational Science and Mathematics at
+                  Monash University in Melbourne, Australia. I am passionate
+                  about technology and writing. I am planning to build awesome,
+                  delightful & secure software.
                 </p>
 
                 <div>
-                  <h2 className="text--left text-margin--lg ">
+                  <h1 className="text--left text-margin--lg ">
                     <span className="badge badge--primary">Projects</span>
-                  </h2>
+                  </h1>
                 </div>
 
                 <ul>
                   <li>
-                    Portfolio Webpage: Displays all my work, blogs and
-                    documentation of my work.
+                    <a href = "www.arvinhay.me">Portfolio Website</a>: A personal website to showcase my work and projects.
                   </li>
                   <li>
-                    Terra Tech Hackathon- Cropify a blogging and weather app for
-                    agritech sector
+                    <a href = "https://claxontournaments.vercel.app/"> Claxon Tournament </a>: A popular mobile tournament organisation that hosts tournaments for various games.
                   </li>
                   <li>
-                    Code Relay 2.0- Harvesta a webapp which can display daily
-                    market price of crop to farmer and can deliver emails
+                    Weighted-Average Mark Calculator (Discontinued): A web application that calculates the weighted average mark of a student based off the units they have completed.
                   </li>
                   <li>
-                    Binary & Bit Manipulation Calculator : This C language
-                    program can convert positive as well as negative integer
-                    into binary values and can perform left shift operator,
-                    right shift operator and bitwise operations.
+                    "Healthy Eating" App: A prototype of a mobile application that helps users to track their daily food intake and provides healthy recipes.
                   </li>
-                  <li>
-                    MedBridge: a website which helps patients with showing
-                    weather, suggesting yoga videos & many more.
-                  </li>
-                  <li>
-                    Star Chat: Chat web application creats a chat room for
-                    multiple user to collaborate with each other.
-                  </li>
+                  <ul style={{ textAlign: 'center' }}>
+                    <strong>More projects can be found on my <a href="https://github.com/arvinloh">GitHub</a></strong>
+                  </ul>
                 </ul>
 
-                <h2 className="text text--right text-margin--lg  ">
-                  <span className="badge badge--primary ">Achivements</span>
-                </h2>
+                <h1 className="text text--right text-margin--lg  ">
+                  <span className="badge badge--primary ">Experience</span>
+                </h1>
 
-                <ol>
-                  <li>TCET Open Source Summer Intern Documentation Team</li>
-                  <li>
-                    TCET Multicon - W 2023 Java competition First Prize Winner
-                  </li>
-                  <li>
-                    Certificate for the Completion of Java Training: Spoken
-                    Tutorial Project, IIT Bombay Java test organized at TCET,
-                    Mumbai
-                  </li>
-                  <li>
-                    Participated in Research Paper Conference Multicon -W 2023:
-                    Deep Learning in Industry and Market Trends
-                  </li>
-                  <li>
-                    Participated in Poster Presentation competition Multicon - W
-                    2023
-                  </li>
-                </ol>
-
+                {/* <ol>
+                  <li>Monash University - Wired</li>
+                </ol> */}
                 <div>
-                  <h2 className="text--left text-margin--lg ">
+                  <h1 className="text--left text-margin--lg ">
+                    <span className="badge badge--primary">Skills</span>
+                  </h1>
+                </div>
+
+                          <p>
+                            • C++ | Python | JavaScript | MySQL | NoSQL | Java | R | Figma
+                          </p>
+                          <p>
+                            • Technical Writing and Documentation | Prototyping
+                          </p>
+                <div>
+                  <h1 className="text--left text-margin--lg ">
                     <span className="badge badge--primary">Education</span>
-                  </h2>
+                  </h1>
                 </div>
 
                 <ul>
                   <li>
-                    Thakur College of Engineering and Technology, Mumbai: Second
-                    Year, Bachlor of Technology in Artificial Intelligence and
-                    Machine Learning. 2026' CGPA - 9.57
+                    Monash University: Bachelor of Science in Computational
+                    Science and Mathematics
                   </li>
-                  <li>
-                    IIT, Madras: Foundation Level- Bachelor of Science (BS)
-                    Degree in Data Science and Applications Sem CGPA - 6.0
-                  </li>
-                  <li>Class 12 -Mar 2022 86.50%</li>
-                  <li>Class 10 -Mar 2020 86.40%</li>
                 </ul>
               </div>
             </div>
@@ -160,52 +138,20 @@ export default function Home() {
       description="Description will go into a meta tag in <head />"
     >
       <AboutpageHeader />
-        <AboutpageFeatures />
-        <main style = {{padding : '50px 500px'}}>
-
-        <h3>Skills & Understanding Of</h3>
-
-                  <p>
-                    • JavaScript | TypeScript | C++ | C | Python | Tailwind CSS
-                    | Node JS | Express | React | jQuery | NoSQL | SQL |
-                    Postgres | MongoDB | MySQL | Git | Github | HTML | CSS |
-                    Bootstrap | Handlebars | Java | Power BI | MS Office
-                  </p>
+        {/* <AboutpageFeatures /> */}
+        <main style = {{padding : '0px 500px'}}>
+        {/* <div>
+          <h1 className="text--left text-margin--lg ">
+            <span className="badge badge--primary">Skills</span>
+          </h1>
+        </div>
 
                   <p>
-                    • AWS | Cloud Computing | CI/CD | Firebase | Docusaurus |
-                    Docker | Moc OS | Linux | OOP | Digital Ocean | Photoshop |
-                    Postman | Google Cloud | System Design | Operating System |
-                    Data Structures | Search Engine Optimization
+                    • C++ | Python | JavaScript | MySQL | NoSQL | Java | R | Figma
                   </p>
-
                   <p>
-                    • Technical Writing and Documentation | Open Source | Devops
-                    | System Administrator | Frontend | Backend | Full-Stack
-                  </p>
-
-                  <p>
-                    - 🔭 I’m currently working on{" "}
-                    <a href="https://github.com/Stats-For-My-Uni/statsForMyUni">
-                      Stats For My Uni
-                    </a>
-                  </p>
-
-                  <p>
-                    - 🌱 I’m currently learning Scalable Backend and Databases.
-                  </p>
-
-                  <p>
-                    - ☁️ I've keen interest in Artificial Intelligence and
-                    Machine Learning. So,I'm learning Tensor Flow
-                  </p>
-
-                  <p>
-                    - 📫 Feel free to reach me out{" "}
-                    <a href="mailto:hackathon2mj@gmail.com">
-                      hackathon2mj@gmail.com
-                    </a>
-                  </p>
+                    • Technical Writing and Documentation | Prototyping
+                  </p> */}
 
       </main>
     </Layout>

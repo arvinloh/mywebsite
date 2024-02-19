@@ -27,29 +27,11 @@ const FeatureList = [
       </>
     ),
   },
-  {
-    title: 'Resume',
-    // Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-    description: (
-      <>
-      <div className="text--center">
-      <img src={require('./resumeGraphic.png').default} width="125px" />
-      </div>
-        Visit my up to date <strong>resume</strong>.
-        <div>
-
-      <h3><button type="button" class="btn btn-primary display--1"> <a href="https://drive.google.com/file/d/113on7gjXffQKw98PI1-9Ziqu6nPHrHro/view?usp=sharing"> Resume 💾</a></button></h3>
-        </div>
-
-     
-      </>
-    ),
-  },
 ];
 
 function Feature({ title, description}) {
   return (
-    <div className={clsx('col col--4')}>
+    <div className={clsx('col col--6')}>
       {/* <div className="text--center">
         <Svg className={styles.featureSvg} role="img" />
       </div> */}
