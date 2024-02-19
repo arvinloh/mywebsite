@@ -1,8 +1,6 @@
-// @ts-check
-// Note: type annotations allow type checking and IDEs autocompletion
-
 const lightCodeTheme = require("prism-react-renderer/themes/github");
 const darkCodeTheme = require("prism-react-renderer/themes/dracula");
+
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -11,7 +9,7 @@ const config = {
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
-  url: "https://mj665.github.io",
+  url: "https://arvinhay.me",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/",
@@ -22,7 +20,7 @@ const config = {
   projectName: "arvin.github.io", // Usually your repo name.
   deploymentBranch: "gh-pages-deployment",
 
-  onBrokenLinks: "warn",
+  onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
 
   // Even if you don't use internalization, you can use this field to set useful
@@ -42,32 +40,20 @@ const config = {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          // editUrl:
-          //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl:
+            'https://github.com/arvinloh/mywebsite',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          // editUrl:
-          //   "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+          editUrl:
+            "https://github.com/arvinloh/mywebsite",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },
       }),
-    ],
-  ],
-  plugins: [
-    [
-      "@docusaurus/plugin-content-blog",
-      {
-        id: "study-notes",
-        path: "./study-notes",
-        routeBasePath: "study-notes",
-        blogTitle: "Study Notes",
-        blogDescription: "This is the Study Notes section",
-      },
     ],
   ],
 
@@ -81,7 +67,7 @@ const config = {
        * * Highlight: added default color mode as dark
        **/
       colorMode: {
-        defaultMode: "dark",
+        // defaultMode: "dark",
         disableSwitch: false,
         respectPrefersColorScheme: true,
       },
@@ -118,9 +104,8 @@ const config = {
             type: "docSidebar",
             sidebarId: "tutorialSidebar",
             position: "left",
-            label: "Docs",
+            label: "Study Notes",
           },
-          { to: "/study-notes", label: "Study Notes", position: "left" },
           { to: "/blog", label: "Blog", position: "left" },
           { to: "/about", label: "About", position: "left" }, // Assuming the route to your about.js page is '/about'
           // {
@@ -165,20 +150,32 @@ const config = {
         style: "dark",
         links: [
           {
-            title: "Docs",
+            title: "Pages",
             items: [
               {
-                label: "Documentation",
+                label: "Study Notes",
                 to: "/docs/intro",
+              },
+              {
+                label: "Blog",
+                to: "/blog",
+              },
+              {
+                label: "About",
+                to: "/about",
               },
             ],
           },
           {
-            title: "Community",
+            title: "My Links",
             items: [
               {
                 label: "LinkedIn",
                 href: "https://www.linkedin.com/in/arvinloh-/",
+              },
+              {
+                label: "GitHub",
+                href: "https://github.com/arvinloh",
               },
               // {
               //   label: 'Discord',
@@ -190,21 +187,21 @@ const config = {
               // },
             ],
           },
-          {
-            title: "More",
-            items: [
-              {
-                label: "Blog",
-                to: "/blog",
-              },
-              {
-                label: "GitHub",
-                href: "https://github.com/arvinloh",
-              },
-            ],
-          },
+          // {
+            // title: "More",
+            // items: [
+            //   {
+            //     label: "Blog",
+            //     to: "/blog",
+            //   },
+            //   {
+            //     label: "GitHub",
+            //     href: "https://github.com/arvinloh",
+            //   },
+            // ],
+          // },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Arvin, Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Arvin.`,
       },
       prism: {
         theme: lightCodeTheme,
