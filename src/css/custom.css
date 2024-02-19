@@ -57,3 +57,10 @@ h1, h2, h3, h4, h5, h6 {
 .navbar__link {
   font-family: inherit; /* Use the font inherited from the parent element */
 }
+/* Targeting the navbar icons */
+.navbar-icon svg {
+  height: 23px; /* Adjust the height as needed */
+  width: auto; /* This ensures the aspect ratio is maintained */
+  padding-right: 0.6rem; /* Add some space between the icon and the text */
+  vertical-align: middle; /* This helps align the icon vertically */
+}
