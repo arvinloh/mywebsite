@@ -59,8 +59,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* Targeting the navbar icons */
 .navbar-icon svg {
-  height: 23px; /* Adjust the height as needed */
+  height: 26px; /* Adjust the height as needed */
   width: auto; /* This ensures the aspect ratio is maintained */
-  padding-right: 0.6rem; /* Add some space between the icon and the text */
+  padding-right: 0.3rem; /* Add some space between the icon and the text */
   vertical-align: middle; /* This helps align the icon vertically */
 }

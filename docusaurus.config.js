@@ -37,6 +37,8 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          routeBasePath: 'study-notes', // Set the base URL for your documentation
+          path: 'study-notes', // Set the location of your documentation markdown files
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
@@ -117,7 +119,8 @@ const config = {
             position: "right",
             className: "navbar-icon",
             "area-label": "GitHub",
-            html: `<svg xmlns="http://www.w3.org/2000/svg" 
+            html: `<svg xmlns="http://www.w3.org/2000/svg"
+            width="26" height="26"  
             stroke="currentColor" 
             fill="currentColor" 
             stroke-width="0" 
@@ -131,6 +134,7 @@ const config = {
             className: "navbar-icon",
             "area-label": "linkedin",
             html: `<svg xmlns="http://www.w3.org/2000/svg" 
+            width="26" height="26"  
             stroke="currentColor" 
             fill="currentColor" 
             stroke-width="0" 
@@ -149,7 +153,7 @@ const config = {
             items: [
               {
                 label: "Study Notes",
-                to: "/docs/intro",
+                to: "/study-notes/overview",
               },
               {
                 label: "Blog",
