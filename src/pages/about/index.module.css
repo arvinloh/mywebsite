@@ -42,4 +42,36 @@
   }
   
   
-  
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+.btnPrimary {
+  font-family: 'Fira Code', monospace; /* Sets the Fira Code font */
+  font-size: 1.25rem; /* Makes the font larger */
+  padding: 0.5rem 1rem; /* Adjust padding to make the button larger */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transition for interactivity */
+  border: none; /* Optional: removes the border */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+  display: block;
+  /* Add space above */
+  margin-top: 1rem;
+  /* Add border */
+  border: 0.5px solid #000000;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: px; /* Rounds the corners of the button */
+}
+
+.btnPrimary:hover, .btnPrimary:focus {
+  background-color: #0056b3; /* Changes background color on hover/focus */
+  transform: scale(1.05); /* Slightly enlarges the button on hover/focus */
+  color: #ffffff; /* Optional: changes the text color on hover/focus */
+  text-decoration: none; /* Removes underline from links on hover/focus */
+}
+
+.btnPrimary a {
+  color: inherit; /* Ensures the link inside the button inherits the button's text color */
+  text-decoration: none; /* Removes underline from links */
+}
+
+.btnPrimary a:hover {
+  text-decoration: none; /* Ensures the link does not get underlined on hover */
+}
