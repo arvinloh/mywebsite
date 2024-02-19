@@ -82,7 +82,7 @@ const config = {
        **/
       colorMode: {
         defaultMode: "dark",
-        disable: false,
+        disableSwitch: false,
         respectPrefersColorScheme: true,
       },
       /**
