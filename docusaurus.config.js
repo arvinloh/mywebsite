@@ -4,7 +4,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Arvin Portfolio",
+  title: "Website",
   tagline: "Always eager to learn new technologies and skills",
   favicon: "img/favicon.ico",
 
