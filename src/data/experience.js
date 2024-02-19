@@ -1,14 +1,13 @@
-import moment from "moment";
-import { Experience } from "../types";
+import { DateTime } from 'luxon';
 
-const experience: Experience[] = [
+const experience = [
   {
     company: "Monash University",
     companyUrl: "https://www.monash.edu/",
     positions: [
       {
         dates: {
-          startDate: moment("2024-02-01T00:00:00+08:00"),
+          startDate: DateTime.fromISO("2024-02-01T00:00:00+08:00"),
         },
         title: "Fastrack Founder 2024",
         description: [
@@ -24,14 +23,14 @@ const experience: Experience[] = [
       },
       {
         dates: {
-          startDate: moment("2024-02-01T00:00:00+08:00"),
+          startDate: DateTime.fromISO("2024-02-01T00:00:00+08:00"),
         },
         title: "Wired - Media",
       },
       {
         dates: {
-          startDate: moment("2023-01-01T00:00:00+08:00"),
-          endDate: moment("2023-12-01T00:00:00+08:00"),
+          startDate: DateTime.fromISO("2023-01-01T00:00:00+08:00"),
+          endDate: DateTime.fromISO("2023-12-01T00:00:00+08:00"),
         },
         title: "Monash Minds Leadership Program",
         description: [
@@ -49,8 +48,8 @@ const experience: Experience[] = [
     positions: [
       {
         dates: {
-          startDate: moment("2022-03-01T00:00:00+10:00"),
-          endDate: moment("2022-11-01T00:00:00+10:00"),
+          startDate: DateTime.fromISO("2022-03-01T00:00:00+10:00"),
+          endDate: DateTime.fromISO("2022-11-01T00:00:00+10:00"),
         },
         title: "Agent Representative",
         description: [
@@ -72,8 +71,8 @@ const experience: Experience[] = [
     positions: [
       {
         dates: {
-          startDate: moment("2017-09-01T00:00:00+10:00"),
-          endDate: moment("2020-08-01T00:00:00+10:00"),
+          startDate: DateTime.fromISO("2017-09-01T00:00:00+10:00"),
+          endDate: DateTime.fromISO("2020-08-01T00:00:00+10:00"),
         },
         title: "Co-Founder/ Managing Director",
         description: [
