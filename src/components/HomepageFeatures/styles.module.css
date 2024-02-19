@@ -1,26 +1,55 @@
-.features {
-  display: flex;
-  flex-wrap: wrap; /* Add this line */
-  align-items: center;
-  justify-content: center; /* Centers items horizontally */
-  padding: 2rem 0;
-  width: 100%;
+:root {
+  --primary-color: #e0ffff;
+  --hover-color: #0056b3;
+  --text-color: #000;
+  --hover-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  --transition-speed: 0.3s;
+  --border-color-hover: #007bff; /* New variable for border color on hover */
 }
 
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+  width: 100%;
+  gap: 1rem;
+}
 
 .featureSvg {
-  max-height: 200px; /* Keeps your current setting */
-  max-width: 100%; /* Ensures image is responsive and does not overflow its container */
-  margin-bottom: 1rem; /* Adds some space between the image and the text below it */
+  max-height: 200px;
+  max-width: 100%;
+  margin-bottom: 1rem;
 }
 
 .featureBox {
-  cursor: pointer; /* Indicates the box is clickable */
-  transition: box-shadow 0.3s ease; /* Smooth transition for shadow */
+  cursor: pointer;
+  transition: box-shadow var(--transition-speed) ease, transform var(--transition-speed) ease, border 0.3s ease;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: var(--background-color);
+  border: 2px solid transparent; /* Prepare for border color change on hover */
 }
 
-.featureBox:hover {
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adds a subtle shadow on hover */
+.featureBox:hover, .featureBox:focus {
+  box-shadow: var(--hover-shadow);
+  transform: translateY(-5px) scale(1.05);
+  border-color: var(--border-color-hover); /* Changes border color on hover */
+}
+
+.arrowIcon, .featureTitle, .featureDescription { /* Assuming you have titles and descriptions */
+  transition: color var(--transition-speed) ease; /* Smooth transition for text color changes */
+}
+
+.featureBox:hover .arrowIcon,
+.featureBox:hover .featureTitle,
+.featureBox:hover .featureDescription {
+  color: rgba(var(--primary-color-rgb), 0.5); /* Changes text color on hover */
 }
 
 .arrowIcon {
@@ -30,13 +59,22 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #f0f0f0;
-  color: #000;
-  transition: background-color 0.3s, transform 0.3s;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color var(--transition-speed), transform var(--transition-speed), color var(--transition-speed);
 }
 
 .arrowIcon:hover, .arrowIcon:focus {
-  background-color: #007bff;
+  background-color: var(--primary-color);
   color: #fff;
   transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .features {
+    justify-content: space-around;
+  }
+  .featureBox {
+    padding: 0.8rem;
+  }
 }
