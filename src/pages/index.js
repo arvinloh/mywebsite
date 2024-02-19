@@ -22,7 +22,7 @@ function HomepageHeader() {
 
           <p className="hero__subtitle">
             {siteConfig.tagline} <br />
-            Technology Enthusiast
+             
           </p>
           <img src="/img/Myproject.png" alt="" srcset="" width="300px" />
           <br />
@@ -47,7 +47,6 @@ export default function Home() {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
-      // title={`Hello from ${siteConfig.title}`}
       title={`Homepage`}
       description="One's home<head />"
     >
