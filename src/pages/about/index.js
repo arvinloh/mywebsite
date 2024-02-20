@@ -184,10 +184,24 @@ function AboutpageHeader() {
                     <span className="badge badge--primary ">Experience</span>
                   </h1>
 
-                  <ol>
-                    <li>Monash University - Wired</li>
-                  </ol>
+                  <div className={styles.experienceTimeline}>
+                    {/* Example Experience */}
+                    <div className={styles.timelineItem}>
+                      <div className={styles.timelineDot}></div>
+                      <div className={styles.timelineDate}>2023 - Present</div>
+                      <div className={styles.timelineContent}>
+                        <h2>Fastrack Founder</h2>
+                        <p>
+                        • Rapid Prototyping: Spearheaded the development and implementation of rapid prototyping techniques, facilitating real-life user testing.<br/> <br/>
+                        • Industry Collaboration and Network Expansion: Engaged in a dynamic collaboration with a wide network of industry partners, including notable organizations like Next - Reece Group, Shadowboxer, Hypershift Systems, LUNA Start-up Studio, Amazon Web Services, LaunchVic, Xailient, ThinkHQ, Airwallex, etc.<br/><br/>
+                        • Business Acumen: Gained substantial experience in business operations and strategies, enhancing my understanding of commercial practices and market dynamics.<br/>
+                        </p>
+                      </div>
+                    </div>
+                    {/* Add more experiences as needed */}
+                  </div>
                 </section>
+
                 {/* Education Section 6 */}
                 <section>
                   <div>
@@ -196,11 +210,16 @@ function AboutpageHeader() {
                     </h1>
                   </div>
 
-                  <ul>
+                  <ul className={styles.educationList}>
                     <li>
-                      Monash University: Bachelor of Science in Computational
-                      Science and Mathematics
+                    <div className={styles.timelineDate}>2023 - Present</div>
+                      <div className={styles.educationContent}>
+                        <h2>Monash University, Australia</h2>
+                        <h3>Bachelor of Science</h3>
+                        <p>Major in Computational Science and Mathematics</p>
+                      </div>
                     </li>
+                    {/* Add more education entries as needed */}
                   </ul>
                 </section>
               </div>

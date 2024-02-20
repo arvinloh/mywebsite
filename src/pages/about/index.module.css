@@ -72,7 +72,7 @@
   margin-left: auto;
   margin-right: auto;
   border-radius: 10px; /* Rounds the corners of the button */
-  background-color: #000000;
+  background-color: #414040;
   color: #ffffff; /* Sets the text color */
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
@@ -226,4 +226,56 @@ body {
 .skillItem:hover {
   background-color: #e2e6ea; /* Slightly darker on hover for interaction feedback */
   transform: scale(1.05); /* Slightly enlarge item on hover for interaction feedback */
+}
+
+/* Experience and Education Section */
+.experienceSection, .educationSection {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start; /* Align items to the start */
+  padding-bottom: 2rem;
+}
+
+.experienceTimeline, .educationList {
+  position: relative;
+  padding-left: 30px; /* Add padding to the left for the timeline */
+}
+
+.timelineItem, .educationList li {
+  margin-bottom: 1.5rem;
+  padding: 1rem; /* Add padding for better spacing */
+  border-radius: 10px; /* Rounded corners for each item */
+}
+
+.timelineDot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #0056b3;
+  position: absolute;
+  left: -23px; /* Move the dot to the left */
+  top: 10px; /* Align the dot with the top of the item */
+}
+
+.timelineDate, .educationDate {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
+}
+
+.timelineContent, .educationContent {
+  margin-left: 20px;
+}
+
+/* Additional CSS for visual enhancements */
+.timelineItem::before {
+  content: '';
+  position: absolute;
+  left: -15px; 
+  top: 20px; 
+  bottom: 40px;
+  width: 2px;
+  background-color: #ddd;
 }
