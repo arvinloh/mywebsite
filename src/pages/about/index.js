@@ -8,6 +8,17 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 import styles from "./index.module.css";
 
+const skills = [
+  "C++",
+  "Python",
+  "JavaScript",
+  "MySQL",
+  "NoSQL",
+  "Java",
+  "R",
+  "Figma",
+]; // Example skills
+
 const projects = [
   {
     name: "Portfolio Website",
@@ -18,6 +29,18 @@ const projects = [
   },
   // Add more projects as needed
 ];
+
+function SkillsSection({ skills }) {
+  return (
+    <div className={styles.skillList}>
+      {skills.map((skill, index) => (
+        <div key={index} className={styles.skillItem}>
+          {skill}
+        </div>
+      ))}
+    </div>
+  );
+}
 
 const markdownToHtml = (text) => {
   return text.replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>");
@@ -48,7 +71,7 @@ const ProjectCard = ({ project }) => {
       </div>
       <div className="card__footer">
         <button onClick={toggleExpand} className={styles.learnMoreButton}>
-          {isExpanded ? "Show Less" : "Learn More"}
+          {isExpanded ? "Show Less" : "Expand"}
         </button>
       </div>
     </div>
@@ -145,7 +168,17 @@ function AboutpageHeader() {
                     </h3>
                   </div>
                 </section>
-                {/* Experience Section 4 */}
+                {/* Skills Section 4 */}
+                <section>
+                  <div>
+                    <h1 className="text--left text-margin--lg ">
+                      <span className="badge badge--primary">Skills</span>
+                    </h1>
+                  </div>
+                  {/* Replace hardcoded skills with SkillsSection component */}
+                  <SkillsSection skills={skills} />
+                </section>
+                {/* Experience Section 5 */}
                 <section>
                   <h1 className="text text--right text-margin--lg  ">
                     <span className="badge badge--primary ">Experience</span>
@@ -154,20 +187,6 @@ function AboutpageHeader() {
                   <ol>
                     <li>Monash University - Wired</li>
                   </ol>
-                </section>
-                {/* Skills Section 5 */}
-                <section>
-                  <div>
-                    <h1 className="text--left text-margin--lg ">
-                      <span className="badge badge--primary">Skills</span>
-                    </h1>
-                  </div>
-
-                  <p>
-                    • C++ | Python | JavaScript | MySQL | NoSQL | Java | R |
-                    Figma
-                  </p>
-                  <p>• Technical Writing and Documentation | Prototyping</p>
                 </section>
                 {/* Education Section 6 */}
                 <section>
