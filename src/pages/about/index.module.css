@@ -2,13 +2,13 @@
  * CSS files with the .module.css suffix will be treated as CSS modules
  * and scoped locally.
  */
-
+/* 
  .heroBanner {
     padding: 4rem 0;
     text-align: center;
     position: relative;
     overflow: hidden;
-    background-size: cover /* Increase the size of the image */
+    background-size: cover 
   }
   
   @media screen and (max-width: 996px) {
@@ -33,17 +33,46 @@
     vertical-align: middle;
     font-size: 1.2em;
     font-weight: bold;
-  }
-  .centerImage {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 50%; /* Makes the image circular */
-  }
+  } */
   
+/* Add your new styles here */
+
+.aboutContent {
+  text-align: center;
+  margin-bottom: 2rem; /* Add some space between sections */
+}
+
+.aboutTitle {
+  font-size: 2.5rem; /* Increase title font size */
+  margin-bottom: 1rem; /* Add space below title */
+}
+
+.profileImage {
+  border-radius: 50%; /* Makes the image circular */
+  margin-bottom: 1rem; /* Add space below the image */
+  width: 300px;
+  height: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right:auto;
+  border: 0.5px solid #000000;
+  transition: transform 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.profileImage:hover {
+  transform: rotate(5deg);
+}
+
+.btnContainer {
+  margin-bottom: 1rem; /* Add space below the button */
+}
+
+/* Additional styles can be added as needed */
+
+
   
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
-.btnPrimary {
+[data-theme = "light"] .btnPrimary {
   font-family: 'Fira Code', monospace; /* Sets the Fira Code font */
   font-size: 1.25rem; /* Makes the font larger */
   padding: 0.5rem 1rem; /* Adjust padding to make the button larger */
@@ -59,10 +88,44 @@
   margin-right: auto;
   border-radius: 10px; /* Rounds the corners of the button */
   background-color: #ffffff;
+  color: #000000; /* Sets the text color */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-.btnPrimary:hover, .btnPrimary:focus {
+[data-theme="dark"] .btnPrimary {
+  font-family: 'Fira Code', monospace; /* Sets the Fira Code font */
+  font-size: 1.25rem; /* Makes the font larger */
+  padding: 0.5rem 1rem; /* Adjust padding to make the button larger */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transition for interactivity */
+  border: none; /* Optional: removes the border */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+  display: block;
+  /* Add space above */
+  margin-top: 1rem;
+  /* Add border */
+  border: 0.5px solid #000000;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px; /* Rounds the corners of the button */
+  background-color: #000000;
+  color: #ffffff; /* Sets the text color */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+body {
+  font-family: 'Fira Code', monospace; /* Or another font that matches your design */
+  color: #333; /* Dark grey for better readability */
+}
+
+[data-theme="light"] .btnPrimary:hover, .btnPrimary:focus {
   background-color: #0056b3; /* Changes background color on hover/focus */
+  transform: scale(1.05); /* Slightly enlarges the button on hover/focus */
+  color: #ffffff; /* Optional: changes the text color on hover/focus */
+  text-decoration: none; /* Removes underline from links on hover/focus */
+}
+
+[data-theme="dark"] .btnPrimary:hover, .btnPrimary:focus {
+  background-color: #007bff; /* Changes background color on hover/focus */
   transform: scale(1.05); /* Slightly enlarges the button on hover/focus */
   color: #ffffff; /* Optional: changes the text color on hover/focus */
   text-decoration: none; /* Removes underline from links on hover/focus */
@@ -75,4 +138,58 @@
 
 .btnPrimary a:hover {
   text-decoration: none; /* Ensures the link does not get underlined on hover */
+}
+
+/* Add your new styles here */
+
+.descriptionBody {
+  text-align: left; /* Align text to the left for better readability */
+  font-size: 1.2rem; /* Adjust font size for better readability */
+  line-height: 1.6; /* Increase line height for better readability */
+}
+
+/* Skill list improvements */
+.skillList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center skills for a more engaging layout */
+}
+
+.skillItem {
+  background-color: #f0f0f0; /* Light background for each skill item */
+  padding: 0.5rem 1rem;
+  border-radius: 20px; /* Rounded edges for skill items */
+  margin: 0.5rem; /* Space around each skill item */
+}
+
+/* Enhance section separation and clarity */
+.sectionTitle:after {
+  content: '';
+  display: block;
+  height: 2px;
+  background-color: #0056b3; /* Or a color that fits your theme */
+  width: 50%;
+  margin: 1rem auto; /* Center the line and add space around it */
+}
+/* Add your new styles here */
+.sectionTitle {
+  font-size: 2.5rem; /* Increase section title font size */
+  margin-bottom: 2rem; /* Add more space below section title */
+  text-align: center; /* Align section title to the center */
+  color: #333; /* Darker color for better readability */
+  font-weight: 600; /* Semi-bold for more emphasis */
+  line-height: 1.2; /* Improve readability */
+}
+
+@media (max-width: 768px) {
+  .aboutTitle, .sectionTitle {
+    font-size: 2rem; /* Adjust font size for smaller screens */
+  }
+  .profileImage {
+    width: 200px;
+    height: 200px; /* Adjust image size for smaller screens */
+  }
+  .btnPrimary {
+    padding: 0.4rem 0.8rem; /* Adjust button padding for smaller screens */
+  }
 }
