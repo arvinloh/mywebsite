@@ -1,40 +1,4 @@
 /**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
- */
-/* 
- .heroBanner {
-    padding: 4rem 0;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-    background-size: cover 
-  }
-  
-  @media screen and (max-width: 996px) {
-    .heroBanner {
-      padding: 2rem;
-    }
-  }
-  
-  .buttons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .cat-gif {
-    margin: 0 10px;
-    vertical-align: middle;
-  }
-  
-  .about-me {
-    display: inline-block;
-    vertical-align: middle;
-    font-size: 1.2em;
-    font-weight: bold;
-  } */
-  
 /* Add your new styles here */
 
 .aboutContent {
@@ -192,4 +156,24 @@ body {
   .btnPrimary {
     padding: 0.4rem 0.8rem; /* Adjust button padding for smaller screens */
   }
+}
+
+.projectCard {
+  margin-bottom: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.learnMoreButton {
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+
+.projectDetails {
+  margin-top: 1rem;
 }
