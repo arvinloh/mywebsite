@@ -1,7 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 /**
  * Any CSS included here will be global. The classic template
  * bundles Infima by default. Infima is a CSS framework designed to
@@ -77,4 +73,10 @@ h1, h2, h3, h4, h5, h6 {
   width: auto; /* This ensures the aspect ratio is maintained */
   padding-right: 0.3rem; /* Add some space between the icon and the text */
   vertical-align: middle; /* This helps align the icon vertically */
+}
+
+/* src/css/custom.css */
+
+.markdown, .markdown article, .blog-post-content { /* Adjust the selector based on your specific setup */
+  font-family: 'Roboto', sans-serif; /* Your preferred font */
 }
