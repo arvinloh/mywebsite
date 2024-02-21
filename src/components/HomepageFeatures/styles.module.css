@@ -52,24 +52,6 @@
   color: rgba(var(--primary-color-rgb), 0.5); /* Changes text color on hover */
 }
 
-.arrowIcon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: var(--background-color);
-  color: var(--text-color);
-  transition: background-color var(--transition-speed), transform var(--transition-speed), color var(--transition-speed);
-}
-
-.arrowIcon:hover, .arrowIcon:focus {
-  background-color: var(--primary-color);
-  color: #fff;
-  transform: scale(1.1);
-}
-
 @media (max-width: 768px) {
   .features {
     justify-content: space-around;
@@ -82,4 +64,32 @@
 .description {
   font-size: 20px; /* Adjust as needed */
   font-family: 'Fira Code', monospace; /* Fallback to monospace if Fira Code is not available */
+}
+
+.arrowIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--background-color);
+  color: var(--arrow-color-light);
+  transition: background-color var(--transition-speed), transform var(--transition-speed), color var(--transition-speed);
+}
+
+.arrowIcon:hover, .arrowIcon:focus {
+  background-color: var(--primary-color);
+  color: #fff;
+  transform: scale(1.1);
+}
+
+[data-theme='dark'] .arrowIcon:hover, [data-theme='dark'] .arrowIcon:focus {
+  background-color: var(--primary-color);
+  color: #000;
+  transform: scale(1.1);
+}
+
+[data-theme='dark'] .arrowIcon {
+  color: var(--arrow-color-dark);
 }

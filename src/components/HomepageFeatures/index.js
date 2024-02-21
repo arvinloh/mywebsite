@@ -20,7 +20,7 @@ const FeatureList = [
     title: 'About',
     imgUrl: require('./resume.jpg').default,
     link: '/about',
-    description: "Oh Hey! Another 'About Me' button",
+    description: "Oh Hey! About Me!",
   },
 ];
 
@@ -39,7 +39,7 @@ const Feature = ({ title, description, imgUrl, link }) => {
         <h3>{title}</h3>
         <img src={imgUrl} className={styles.featureSvg} alt={title} />
         <p className={styles.description}>{description}</p> {/* Updated line */}
-        <span className={styles.arrowIcon}><FaArrowRight /></span>
+        <span className={`${styles.arrowIcon}`}><FaArrowRight /></span>
       </div>
     </div>
   );
