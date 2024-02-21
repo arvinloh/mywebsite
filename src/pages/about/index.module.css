@@ -274,12 +274,24 @@ body {
 
 .timelineDot {
   width: 20px;
+  z-index: 2; /* Make the dot appear above the timeline */
   height: 20px;
   border-radius: 50%;
   background-color: #0056b3;
   position: absolute;
   left: -23px; /* Move the dot to the left */
   top: 10px; /* Align the dot with the top of the item */
+}
+
+.timelineDot2 {
+  width: 20px;
+  z-index: 2; /* Make the dot appear above the timeline */
+  height: 20px;
+  border-radius: 50%;
+  background-color: #0056b3;
+  position: absolute;
+  left: -23px; /* Move the dot to the left */
+  top: 517px; /* Align the dot with the top of the item */
 }
 
 .timelineDate, .educationDate {

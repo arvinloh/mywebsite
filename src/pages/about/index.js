@@ -186,6 +186,7 @@ function AboutpageHeader() {
 
                   <div className={styles.experienceTimeline}>
                     {/* Example Experience */}
+                    <div className = {styles.timelineDot}></div>
                     <div className={styles.timelineItem}>
                       <div className={styles.timelineDate}>Nov 2023 - Present</div>
                       <div className={styles.timelineContent}>
@@ -198,6 +199,7 @@ function AboutpageHeader() {
                       </div>
                     </div>
                     <div className={styles.timelineItem}>
+                      <div className = {styles.timelineDot2}></div>
                       <div className={styles.timelineDate}>Nov 2022 - Present</div>
                       <div className={styles.timelineContent}>
                         <h2>Real Estate Agent</h2>
