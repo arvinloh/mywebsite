@@ -180,7 +180,7 @@ body {
   text-align: center; /* Centering the button */
 }
 
-.learnMoreButton {
+[data-theme="dark"] .learnMoreButton {
   cursor: pointer;
   background-color: #007bff; /* Blue button color */
   color: #ffffff; /* White text color */
@@ -188,9 +188,28 @@ body {
   padding: 8px 16px;
   border-radius: 4px;
   transition: background-color 0.2s ease-in-out; /* Smooth transition for background color */
+  font: inherit;
+  /* size */
+  font-size: 0.8rem;
 }
 
-.learnMoreButton:hover {
+[data-theme="light"] .learnMoreButton {
+  cursor: pointer;
+  background-color: #00ff99; /* Blue button color */
+  color: #000000; /* White text color */
+  border: 0.1px solid #000000; /* Black border */
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease-in-out; /* Smooth transition for background color */
+  font: inherit;
+  /* size */
+  font-size: 0.8rem;
+}
+[data-theme="light"] .learnMoreButton:hover {
+  background-color: #21864e; /* Darker shade on hover */
+}
+
+[data-theme="dark"] .learnMoreButton:hover {
   background-color: #0056b3; /* Darker shade on hover */
 }
 

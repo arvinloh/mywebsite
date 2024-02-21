@@ -187,8 +187,7 @@ function AboutpageHeader() {
                   <div className={styles.experienceTimeline}>
                     {/* Example Experience */}
                     <div className={styles.timelineItem}>
-                      <div className={styles.timelineDot}></div>
-                      <div className={styles.timelineDate}>2023 - Present</div>
+                      <div className={styles.timelineDate}>Nov 2023 - Present</div>
                       <div className={styles.timelineContent}>
                         <h2>Fastrack Founder</h2>
                         <p>
@@ -198,7 +197,35 @@ function AboutpageHeader() {
                         </p>
                       </div>
                     </div>
-                    {/* Add more experiences as needed */}
+                    <div className={styles.timelineItem}>
+                      <div className={styles.timelineDate}>Nov 2022 - Present</div>
+                      <div className={styles.timelineContent}>
+                        <h2>Real Estate Agent</h2>
+                        <p>
+                          1. Perform market appraisals for sales of property, businesses or commercial leasing<br/><br/>
+                          2. Use personal initiative, source prospective sellers or buyers of property or businesses, or prospective property owners or tenants in relation to the leasing of commercial property<br/><br/>
+                          3. Supervise the necessary listing and sales documentation for property or businesses, or leases or agreements to lease associated with commercial property<br/><br/>
+                          4. Conduct market research and provide marketing advice to customers of the real estate business<br/><br/>
+                          5. Conduct negotiations between the prospective buyer and seller of property or businesses, or between a prospective tenant and the property owner<br/><br/>
+                          6. Conduct inspections with interested parties for real property or businesses that are for sale (including open homes)<br/><br/>
+                          7. Organise advertising, sign boards, searches, and more<br/><br/>
+                          8. Conduct auction(s) of property<br/><br/>
+                          9. Liaise with conveyancers or solicitors involved in the sale.
+                        </p>
+                      </div>
+                    </div>
+                    <div className={styles.timelineItem}>
+                      <div className={styles.timelineDate}>Sep 2017 - Aug 2020</div>
+                      <div className={styles.timelineContent}>
+                        <h2>Managing Director</h2>
+                        <p>
+                          - Given the opportunity to direct four seasonal tournaments, with each achieving a great amount of success, growing a following of 5,000 members<br/><br/>
+                          - Negotiated terms of partnership with various game creators to organise well-publicized tournaments with large prizepools.<br/><br/>
+                          - Assess and hire staff employees such as digital artists, streamers, and moderators, and form a community engagement team.<br/><br/>
+                          - Recruited, led and trained a team of 100 volunteers to enhance event experience.
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </section>
 
@@ -212,11 +239,12 @@ function AboutpageHeader() {
 
                   <ul className={styles.educationList}>
                     <li>
-                    <div className={styles.timelineDate}>2023 - Present</div>
+                    <div className={styles.timelineDate}>Feb 2023 - Present</div>
                       <div className={styles.educationContent}>
                         <h2>Monash University, Australia</h2>
                         <h3>Bachelor of Science</h3>
-                        <p>Major in Computational Science and Mathematics</p>
+                        <p>Major in Computational Science and Mathematics <br/>
+                        Expected graduation in Feb 2025</p>
                       </div>
                     </li>
                     {/* Add more education entries as needed */}
