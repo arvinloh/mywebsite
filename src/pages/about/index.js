@@ -28,7 +28,14 @@ const projects = [
     image: "/img/website.png",
     link: "http://www.arvinhay.me",
   },
-  // Add more projects as needed
+  {
+    name: "Healthy Eating App",
+    description: "A healthy eating app to empower users to achieve their health goals.",
+    detailedDescription:
+      "This project is a comprehensive mobile application designed to help users achieve their health goals, while also providing a platform for users to track their progress with recipes. It features a user-friendly interface and a database of healthy recipes",
+    image: "/img/healthapp.jpg",
+    link: "https://drive.google.com/drive/folders/1hePotIMlxmLfYEXJvsQpdF4GUSJNn9BH?usp=sharing",
+  },
 ];
 
 function SkillsSection({ skills }) {
@@ -46,7 +53,6 @@ function SkillsSection({ skills }) {
 const markdownToHtml = (text) => {
   return text.replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>");
 };
-
 const ProjectCard = ({ project }) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
@@ -66,12 +72,17 @@ const ProjectCard = ({ project }) => {
       <div className="card__body">
         <p>{project.description}</p>
         {isExpanded && (
-          <div
-            className={styles.projectDetails}
-            dangerouslySetInnerHTML={{
-              __html: markdownToHtml(project.detailedDescription),
-            }}
-          />
+          <>
+            <div
+              className={styles.projectDetails}
+              dangerouslySetInnerHTML={{
+                __html: markdownToHtml(project.detailedDescription),
+              }}
+            /> <br/>
+            <div>
+            <img src={project.image} alt={project.name} className={styles.projectImage} />            
+            </div>
+          </>
         )}
       </div>
       <div className="card__footer">

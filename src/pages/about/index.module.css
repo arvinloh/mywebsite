@@ -315,3 +315,11 @@ body {
   width: 2px;
   background-color: #ddd;
 }
+
+.projectImage {
+  width: 100%; /* Make the image take up the full width of its container */
+  height: auto; /* Keep the original aspect ratio */
+  object-fit: cover; /* Resize the image to cover the container while maintaining its aspect ratio */
+  border-radius: 8px; /* Round the corners of the image */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Add a shadow for a 3D effect */
+}
