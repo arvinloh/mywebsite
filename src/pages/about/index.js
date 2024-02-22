@@ -25,6 +25,7 @@ const projects = [
     description: "A personal website to showcase my work and projects.",
     detailedDescription:
       "This project is a comprehensive **portfolio** website designed to showcase my technical skills, projects, and professional background. It features a responsive design, interactive elements, and a blog section for sharing insights.",
+    image: "/img/website.png",
     link: "http://www.arvinhay.me",
   },
   // Add more projects as needed
@@ -56,7 +57,11 @@ const ProjectCard = ({ project }) => {
   return (
     <div className={clsx("card", styles.projectCard)}>
       <div className="card__header">
-        <h3>{project.name}</h3>
+        <h3>
+          <a href={project.link} target="_blank" rel="noopener noreferrer">
+            {project.name}
+          </a>
+        </h3>
       </div>
       <div className="card__body">
         <p>{project.description}</p>
@@ -190,7 +195,8 @@ function AboutpageHeader() {
                     <div className={styles.timelineItem}>
                       <div className={styles.timelineDate}>Nov 2023 - Present</div>
                       <div className={styles.timelineContent}>
-                        <h2>Fastrack Founder</h2>
+                        <h1>Entrepreneurship Portfolio @ Monash University</h1>
+                        <h2>Fastrack Founder 2024</h2>
                         <p>
                         • Rapid Prototyping: Spearheaded the development and implementation of rapid prototyping techniques, facilitating real-life user testing.<br/> <br/>
                         • Industry Collaboration and Network Expansion: Engaged in a dynamic collaboration with a wide network of industry partners, including notable organizations like Next - Reece Group, Shadowboxer, Hypershift Systems, LUNA Start-up Studio, Amazon Web Services, LaunchVic, Xailient, ThinkHQ, Airwallex, etc.<br/><br/>
@@ -199,9 +205,9 @@ function AboutpageHeader() {
                       </div>
                     </div>
                     <div className={styles.timelineItem}>
-                      <div className = {styles.timelineDot2}></div>
                       <div className={styles.timelineDate}>Nov 2022 - Present</div>
                       <div className={styles.timelineContent}>
+                        <h1>Gold 4Life Real Estate</h1>
                         <h2>Real Estate Agent</h2>
                         <p>
                           1. Perform market appraisals for sales of property, businesses or commercial leasing<br/><br/>
@@ -219,6 +225,7 @@ function AboutpageHeader() {
                     <div className={styles.timelineItem}>
                       <div className={styles.timelineDate}>Sep 2017 - Aug 2020</div>
                       <div className={styles.timelineContent}>
+                        <h1>Claxon Tournament Pte. Ltd</h1>
                         <h2>Managing Director</h2>
                         <p>
                           - Given the opportunity to direct four seasonal tournaments, with each achieving a great amount of success, growing a following of 5,000 members<br/><br/>
@@ -266,7 +273,7 @@ export default function Home() {
   return (
     <Layout
       // title={`Hello from ${siteConfig.title}`}
-      title={`About}`}
+      title={`About`}
       description="Some stuff about me <head />"
     >
       <AboutpageHeader />

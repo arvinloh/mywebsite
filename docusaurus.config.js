@@ -63,7 +63,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: "img/graphic_programmer.jpg",
+      image: "transparent-arvin-profile.png",
 
       /**
        * * Highlight: added default color mode as dark
