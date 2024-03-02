@@ -132,7 +132,7 @@ function AboutpageHeader() {
                           type="button"
                           className={clsx(styles.btnPrimary)}
                         >
-                          <a href="./assets/resume.pdf">Resume 💾</a>
+                          <a href="./resume">Resume 💾</a>
                         </button>
                       </h3>
                     </div>
@@ -156,7 +156,9 @@ function AboutpageHeader() {
                     I am <strong>Arvin Hay</strong> in my second year of
                     Bachelor of Science majoring in Computational Science and
                     Mathematics at Monash University in Australia. I am planning
-                    to build awesome, delightful & secure software.
+                    to build awesome, delightful & secure software. <br/> <br/>
+                    In my first year, I have completed 3 semester 
+                    worth of units (12 units) and have achieved a WAM of 77.
                   </p>
                 </section>
                 {/* Project Section 3 */}
