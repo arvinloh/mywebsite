@@ -80,3 +80,7 @@ h1, h2, h3, h4, h5, h6 {
 .markdown, .markdown article, .blog-post-content { /* Adjust the selector based on your specific setup */
   font-family: 'Roboto', sans-serif; /* Your preferred font */
 }
+
+.hidden {
+  display: none !important;
+  }

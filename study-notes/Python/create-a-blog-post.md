@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+# Hide this page
+sidebar_class_name: hidden
 ---
 
 # Create a Blog Post
