@@ -36,6 +36,25 @@ const projects = [
     image: "/img/healthapp.jpg",
     link: "https://drive.google.com/drive/folders/1hePotIMlxmLfYEXJvsQpdF4GUSJNn9BH?usp=sharing",
   },
+  {
+    name: "Claxon Tournament",
+    description: "An online gaming tournament platform for competitive gamers.",
+    detailedDescription:
+      "This project is a comprehensive online platform designed to host and manage gaming tournaments. We have collaborated with the gaming developers in the mobile gaming industry \
+      to bring exciting tournaments with prizepools to players. Our tournaments are streamed on YouTube.",
+    image: "/img/claxontournament.jpeg",
+    link: "https://claxontournaments.net/",
+  },
+  {
+    name: "GachaFood",
+    description: "An online restaurant for Southeast Asian cuisine.",
+    detailedDescription:
+      "This is a small business that my family and I started. We sell handmade curry puffs and other Southeast Asian cuisine in Melbourne.\
+       We have a strong commitment to spreading Southeast Asian culinary. Throughout the years, we have received 5/5⋆ reviews from a base of over 150 satisfied customers through exceptional food quality and customer service.\
+       During COVID, we have donated 20 curry puffs to the sick and elderly in our community. We have also donated 100 curry puffs to the homeless in Melbourne CBD.",
+    image: "/img/gachafood.jpg",
+    link: "https://www.facebook.com/gachafoodofficial",
+  }
 ];
 
 function SkillsSection({ skills }) {
@@ -234,6 +253,18 @@ function AboutpageHeader() {
                           9. Liaise with conveyancers or solicitors involved in the sale.
                         </p>
                       </div>
+                    </div>
+                    <div className={styles.timelineItem}>
+                      <div className={styles.timelineDate}>Nov 2021 - Aug 2023</div>
+                        <div className={styles.timelineContent}>
+                          <h1>Co-Founder</h1>
+                          <h2> GachaFood</h2>
+                          <p>
+                            • 5/5⋆ reviews from a base of over 150 satisfied customers through exceptional food quality and customer service.<br/><br/>
+                            • Managed and maintained the company’s website and Facebook page. Developed a bot for efficient handling of enquiries, streamlining the communication process and improving response times.<br/><br/>
+                            • Distribute handmade curry puffs across Southeast, CBD, and West Melbourne suburbs, with strong commitment to spreading Southeast Asian culinary.
+                          </p>
+                        </div>
                     </div>
                     <div className={styles.timelineItem}>
                       <div className={styles.timelineDate}>Sep 2017 - Aug 2020</div>
