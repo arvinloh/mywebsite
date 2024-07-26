@@ -88,7 +88,7 @@ const config = {
         id: "openToWork",
         content:
           // <strong>Open to get hired.</strong>
-          `You can reach me out on Discord (username: hyunski), LinkedIn or Email.`,
+          `You can reach me out on LinkedIn or Email.`,
         backgroundColor: "#d1faff",
         textColor: "#574476",
         isCloseable: true,

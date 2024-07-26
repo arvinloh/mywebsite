@@ -21,20 +21,20 @@ const skills = [
 
 const projects = [
   {
-    name: "Portfolio Website",
-    description: "A personal website to showcase my work and projects.",
+    name: "Troche",
+    description: "A Melbourne based startup that aims to create a solution for medication adherence.",
     detailedDescription:
-      "This project is a comprehensive **portfolio** website designed to showcase my technical skills, projects, and professional background. It features a responsive design, interactive elements, and a blog section for sharing insights.",
-    image: "/img/website.png",
-    link: "http://www.arvinhay.me",
+      "Troche is a Melbourne based startup that aims to create a solution for medication adherence. We are currently in the ideation phase and are looking for developers to join our team. <br/> <br/> Our mission is to create a solution for medication adherence that is easy to use, affordable, and accessible to everyone. We believe that by using technology, we can help people take their medications on time and improve their health outcomes.",
+    image: "/img/troche.png",
+    link: "https://troche.com.au",
   },
   {
-    name: "Healthy Eating App",
-    description: "A healthy eating app to empower users to achieve their health goals.",
+    name: "SAMMY",
+    description: "A student research initiative website for WonderLab @ Monash University.",
     detailedDescription:
-      "This project is a comprehensive mobile application designed to help users achieve their health goals, while also providing a platform for users to track their progress with recipes. It features a user-friendly interface and a database of healthy recipes",
-    image: "/img/healthapp.jpg",
-    link: "https://drive.google.com/drive/folders/1hePotIMlxmLfYEXJvsQpdF4GUSJNn9BH?usp=sharing",
+      "SAMMY tackled a Geopolitical Security research challenge given by a real-world industry partner (WonderLab) focused on 'The Impacts of Robots on Public Spaces.' <br/> <br/> We developed a comprehensive solution that includes a website, campaign videos, articles, infographics, and even rough ideas for a board game to educate about the benefits and limitations of robots. <br/> <br/> Our website is designed to be user-friendly and informative, with a focus on educating the public about the impacts of robots on public spaces.",
+    image: "/img/website.png",
+    link: "https://sammyred.vercel.app",
   },
   {
     name: "Claxon Tournament",
@@ -54,7 +54,15 @@ const projects = [
        During COVID, we have donated 20 curry puffs to the sick and elderly in our community. We have also donated 100 curry puffs to the homeless in Melbourne CBD.",
     image: "/img/gachafood.jpg",
     link: "https://www.facebook.com/gachafoodofficial",
-  }
+  },
+  {
+    name: "Healthy Eating App",
+    description: "A healthy eating app to empower users to achieve their health goals.",
+    detailedDescription:
+      "Please direct message me for more information. This project is a comprehensive mobile application designed to help users achieve their health goals, while also providing a platform for users to track their progress with recipes. It features a user-friendly interface and a database of healthy recipes",
+    image: "/img/healthapp.jpg",
+    // link: "#",
+  },
 ];
 
 function SkillsSection({ skills }) {
@@ -140,7 +148,7 @@ function AboutpageHeader() {
                       </ul>
                     </div>
                     <img
-                      src="/img/me.jpeg"
+                      src="/img/me3.jpeg"
                       alt=""
                       className={clsx(styles.profileImage)}
                       width="300px"
@@ -160,7 +168,7 @@ function AboutpageHeader() {
                       <a href="https://www.linkedin.com/in/arvinloh-/">
                         LinkedIn
                       </a>{" "}
-                      or on Discord (hyunski)
+                      or Email
                     </ul>
                     <hr />
                   </div>
@@ -176,8 +184,10 @@ function AboutpageHeader() {
                     Bachelor of Science majoring in Computational Science and
                     Mathematics at Monash University in Australia. I am planning
                     to build awesome, delightful & secure software. <br/> <br/>
-                    In my first year, I have completed 3 semester 
-                    worth of units (12 units) and have achieved a WAM of 77.
+
+                    I am a Fastrack Founder 2024, Monash Science Student Ambassador, Monash Minds Leadership Coach, recipient of Achieving Potential for Distinction Scholarship and tutor for Monash IT Programming Bootcamp. I am also involved in multiple student clubs, including WIRED @ Monash<br/> <br/>
+                    I am passionate about science, technology and writing. I have experience in entrepreneurship, real estate, and managing a small business. I am currently working on a startup, Troche, and our mission is to create a solution for medication adherence. <br/> <br/>
+                    As an avid learner, I have completed 4.75 semester worth of units (19 units) in the first year and a half of my degree and maintained a WAM of 77. <br/> <br/>
                   </p>
                 </section>
                 {/* Project Section 3 */}
@@ -227,7 +237,7 @@ function AboutpageHeader() {
                     <div className={styles.timelineItem}>
                       <div className={styles.timelineDate}>Nov 2023 - Present</div>
                       <div className={styles.timelineContent}>
-                        <h1>Entrepreneurship Portfolio @ Monash University</h1>
+                        <h1>Troche</h1>
                         <h2>Fastrack Founder 2024</h2>
                         <p>
                         • Rapid Prototyping: Spearheaded the development and implementation of rapid prototyping techniques, facilitating real-life user testing.<br/> <br/>
@@ -236,21 +246,31 @@ function AboutpageHeader() {
                         </p>
                       </div>
                     </div>
+                    {/* Example Experience */}
+                    <div className = {styles.timelineDot}></div>
                     <div className={styles.timelineItem}>
-                      <div className={styles.timelineDate}>Nov 2022 - Present</div>
+                      <div className={styles.timelineDate}>Mar 2024 - Present</div>
+                      <div className={styles.timelineContent}>
+                        <h1>Monash Science Student Ambassador</h1>
+                        <h2>Dean Faculty of Science</h2>
+                        <p>
+                        • Promote Monash University and the Faculty of Science programs and activities to both prospective and current students.<br/> <br/>
+                        • Engage with students on Open Day, information seminars, and school visits<br/><br/>
+                        • Representing the Faculty at a variety of events, through social media and marketing activities<br/>
+                        </p>
+                      </div>
+                    </div>
+                    <div className={styles.timelineItem}>
+                      <div className={styles.timelineDate}>Mar 2022 - Feb 2024</div>
                       <div className={styles.timelineContent}>
                         <h1>Gold 4Life Real Estate</h1>
                         <h2>Real Estate Agent</h2>
                         <p>
-                          1. Perform market appraisals for sales of property, businesses or commercial leasing<br/><br/>
-                          2. Use personal initiative, source prospective sellers or buyers of property or businesses, or prospective property owners or tenants in relation to the leasing of commercial property<br/><br/>
-                          3. Supervise the necessary listing and sales documentation for property or businesses, or leases or agreements to lease associated with commercial property<br/><br/>
-                          4. Conduct market research and provide marketing advice to customers of the real estate business<br/><br/>
-                          5. Conduct negotiations between the prospective buyer and seller of property or businesses, or between a prospective tenant and the property owner<br/><br/>
-                          6. Conduct inspections with interested parties for real property or businesses that are for sale (including open homes)<br/><br/>
-                          7. Organise advertising, sign boards, searches, and more<br/><br/>
-                          8. Conduct auction(s) of property<br/><br/>
-                          9. Liaise with conveyancers or solicitors involved in the sale.
+                        • Mentored by seasoned professional with 28 years of experience in the real estate market, who supported me throughout my learning journey<br/><br/>
+                        • Excel proficiency for Investment Property Analysis (IPA) and Customer Relationship Management (CRM).<br/><br/>
+                        • Supervise the necessary listing and sales documentation for property or businesses, or leases or agreements to lease associated with commercial property<br/><br/>
+                        • Utilized digital platforms and traditional advertising methods to maximize property exposure.<br/><br/>
+                        • Collaborated with professionals agents, directors, property developers and built trust with clients.<br/>
                         </p>
                       </div>
                     </div>
@@ -272,10 +292,10 @@ function AboutpageHeader() {
                         <h1>Claxon Tournament Pte. Ltd</h1>
                         <h2>Managing Director</h2>
                         <p>
-                          - Given the opportunity to direct four seasonal tournaments, with each achieving a great amount of success, growing a following of 5,000 members<br/><br/>
-                          - Negotiated terms of partnership with various game creators to organise well-publicized tournaments with large prizepools.<br/><br/>
-                          - Assess and hire staff employees such as digital artists, streamers, and moderators, and form a community engagement team.<br/><br/>
-                          - Recruited, led and trained a team of 100 volunteers to enhance event experience.
+                          • Given the opportunity to direct four seasonal tournaments, with each achieving a great amount of success, growing a following of 5,000 members<br/><br/>
+                          • Negotiated terms of partnership with various game creators to organise well-publicized tournaments with large prizepools.<br/><br/>
+                          • Assess and hire staff employees such as digital artists, streamers, and moderators, and form a community engagement team.<br/><br/>
+                          • Recruited, led and trained a team of 100 volunteers to enhance event experience.
                         </p>
                       </div>
                     </div>
@@ -297,6 +317,12 @@ function AboutpageHeader() {
                         <h2>Monash University, Australia</h2>
                         <h3>Bachelor of Science</h3>
                         <p>Major in Computational Science and Mathematics <br/>
+                        &nbsp; - Fastrack Founder 2024 <br/>
+                        &nbsp; - Monash Science Student Ambassador <br/>
+                        &nbsp; - Monash Minds Leadership Coach <br/>
+                        &nbsp; - Faculty of IT Programming Bootcamp Tutor <br/>
+                        &nbsp; - WIRED @ IT Auxiliary <br/>
+                        &nbsp; - Achieving Potential for Distinction Scholarship <br/>
                         Expected graduation in Feb 2025</p>
                       </div>
                     </li>
@@ -318,7 +344,7 @@ export default function Home() {
     <Layout
       // title={`Hello from ${siteConfig.title}`}
       title={`About`}
-      description="Some stuff about me <head />"
+      description="Everything about Arvin Hay, a university student that is passionate about technology and writing."
     >
       <AboutpageHeader />
       {/* <AboutpageFeatures /> */}

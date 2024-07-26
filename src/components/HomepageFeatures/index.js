@@ -18,7 +18,7 @@ const FeatureList = [
   },
   {
     title: 'About',
-    imgUrl: require('./resume.jpg').default,
+    imgUrl: require('./resume.png').default,
     link: '/about',
     description: "Oh Hey! About Me!",
   },

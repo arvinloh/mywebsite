@@ -48,7 +48,7 @@ export default function Home() {
   return (
     <Layout
       title={`Homepage`}
-      description="One's home<head />"
+      description="Welcome to the homepage of Arvin Hay site, where you can find my projects, blogs and more."
     >
       <HomepageHeader />
       <main>
