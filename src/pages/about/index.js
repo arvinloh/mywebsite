@@ -240,9 +240,9 @@ function AboutpageHeader() {
                         <h1>Troche</h1>
                         <h2>Fastrack Founder 2024</h2>
                         <p>
-                        • Rapid Prototyping: Spearheaded the development and implementation of rapid prototyping techniques, facilitating real-life user testing.<br/> <br/>
-                        • Industry Collaboration and Network Expansion: Engaged in a dynamic collaboration with a wide network of industry partners, including notable organizations like Next - Reece Group, Shadowboxer, Hypershift Systems, LUNA Start-up Studio, Amazon Web Services, LaunchVic, Xailient, ThinkHQ, Airwallex, etc.<br/><br/>
-                        • Business Acumen: Gained substantial experience in business operations and strategies, enhancing my understanding of commercial practices and market dynamics.<br/>
+                        • Spearheaded the development and implementation of prototyping techniques, facilitating real-life user testing.<br/> <br/>
+                        • Coached by a wide network of industry partners, including notable organizations like Next - Reece Group, Shadowboxer, Hypershift Systems, LUNA Start-up Studio, Amazon Web Services, LaunchVic, Xailient, ThinkHQ, Airwallex, etc.<br/><br/>
+                        • Gained substantial experience in business operations and strategies, enhancing my understanding of commercial practices and market dynamics.<br/>
                         </p>
                       </div>
                     </div>
