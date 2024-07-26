@@ -109,12 +109,12 @@ const config = {
           },
           { to: "/blog", label: "Blog", position: "left" },
           { to: "/about", label: "About", position: "left" }, // Assuming the route to your about.js page is '/about'
-          { to: "/resume", label: "Resume", position: "left" },
-          // {
-          //   href: `https://github.com/arvinloh`,
-          //   label: "GitHub Repo",
-          //   position: "left",
-          // },
+          // { to: "/resume", label: "Resume", position: "left" },
+          {
+            href: `https://troche.com.au`,
+            label: "Troche",
+            position: "left",
+          },
           {
             href: "https://github.com/arvinloh",
             position: "right",
