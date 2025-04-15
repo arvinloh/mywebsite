@@ -114,8 +114,8 @@ const config = {
           { to: "/about", label: "About", position: "left" }, // Assuming the route to your about.js page is '/about'
           // { to: "/resume", label: "Resume", position: "left" },
           {
-            href: `https://troche.com.au`,
-            label: "Troche",
+            href: `https://proproo.com.au`,
+            label: "PropRoo",
             position: "left",
           },
           {
