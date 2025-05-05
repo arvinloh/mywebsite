@@ -17,16 +17,26 @@ const skills = [
   "Java",
   "R",
   "Figma",
+  "Flutter",
+  "React",
 ]; // Example skills
 
 const projects = [
+  {
+    name: "PropRoo",
+    description: "A real estate technology startup that aims to revolutionise the way people buy and sell properties.",
+    detailedDescription:
+      "Directed by a team of experienced professionals, PropRoo operates as an investment strategy and real estate technology startup. <br/> <br/> We are currently in the ideation phase and are looking for developers to join our team. <br/> <br/> Our mission is to revolutionise the way people buy and sell properties by using technology to make the process easier, faster, and more efficient.",
+    image: "/img/PropRoo-Home.png",
+    link: "https://proproo.com.au/",
+  },
   {
     name: "Troche",
     description: "A Melbourne based startup that aims to create a solution for medication adherence.",
     detailedDescription:
       "Troche is a Melbourne based startup that aims to create a solution for medication adherence. We are currently in the ideation phase and are looking for developers to join our team. <br/> <br/> Our mission is to create a solution for medication adherence that is easy to use, affordable, and accessible to everyone. We believe that by using technology, we can help people take their medications on time and improve their health outcomes.",
     image: "/img/troche.png",
-    link: "https://troche.com.au",
+    link: "https://troche.netlify.app/",
   },
   {
     name: "SAMMY",
@@ -35,34 +45,7 @@ const projects = [
       "SAMMY tackled a Geopolitical Security research challenge given by a real-world industry partner (WonderLab) focused on 'The Impacts of Robots on Public Spaces.' <br/> <br/> We developed a comprehensive solution that includes a website, campaign videos, articles, infographics, and even rough ideas for a board game to educate about the benefits and limitations of robots. <br/> <br/> Our website is designed to be user-friendly and informative, with a focus on educating the public about the impacts of robots on public spaces.",
     image: "/img/website.png",
     link: "https://sammyred.vercel.app",
-  },
-  {
-    name: "Claxon Tournament",
-    description: "An online gaming tournament platform for competitive gamers.",
-    detailedDescription:
-      "This project is a comprehensive online platform designed to host and manage gaming tournaments. We have collaborated with the gaming developers in the mobile gaming industry \
-      to bring exciting tournaments with prizepools to players. Our tournaments are streamed on YouTube.",
-    image: "/img/claxontournament.jpeg",
-    link: "https://claxontournaments.net/",
-  },
-  {
-    name: "GachaFood",
-    description: "An online restaurant for Southeast Asian cuisine.",
-    detailedDescription:
-      "This is a small business that my family and I started. We sell handmade curry puffs and other Southeast Asian cuisine in Melbourne.\
-       We have a strong commitment to spreading Southeast Asian culinary. Throughout the years, we have received 5/5⋆ reviews from a base of over 150 satisfied customers through exceptional food quality and customer service.\
-       During COVID, we have donated 20 curry puffs to the sick and elderly in our community. We have also donated 100 curry puffs to the homeless in Melbourne CBD.",
-    image: "/img/gachafood.jpg",
-    link: "https://www.facebook.com/gachafoodofficial",
-  },
-  {
-    name: "Healthy Eating App",
-    description: "A healthy eating app to empower users to achieve their health goals.",
-    detailedDescription:
-      "Please direct message me for more information. This project is a comprehensive mobile application designed to help users achieve their health goals, while also providing a platform for users to track their progress with recipes. It features a user-friendly interface and a database of healthy recipes",
-    image: "/img/healthapp.jpg",
-    // link: "#",
-  },
+  }
 ];
 
 function SkillsSection({ skills }) {
@@ -141,8 +124,7 @@ function AboutpageHeader() {
                             Hi 👋, I'm Arvin
                           </h1>
                           <h3 className="text--center text-margin-lg">
-                            A university student that is passionate about
-                            technology and writing
+                            A learner, developer, and entrepreneur.
                           </h3>
                         </summary>
                       </ul>
@@ -168,7 +150,10 @@ function AboutpageHeader() {
                       <a href="https://www.linkedin.com/in/arvinloh-/">
                         LinkedIn
                       </a>{" "}
-                      or Email
+                      or{" "}
+                      <a href="mailto:arvin.loh1111@gmail.com">
+                        Email
+                      </a>
                     </ul>
                     <hr />
                   </div>
@@ -177,17 +162,13 @@ function AboutpageHeader() {
                 <br />
                 <section>
                   <h1 className="text--center text-margin--lg">
-                    <span className="badge badge--primary">Who am I?</span>
+                    <span className="badge badge--primary">Biography</span>
                   </h1>
                   <p>
-                    I am <strong>Arvin Hay</strong> in my second year of
-                    Bachelor of Science majoring in Computational Science and
-                    Mathematics at Monash University in Australia. I am planning
-                    to build awesome, delightful & secure software. <br/> <br/>
-
-                    I am a Fastrack Founder 2024, Monash Science Student Ambassador, Monash Minds Leadership Coach, recipient of Achieving Potential for Distinction Scholarship and tutor for Monash IT Programming Bootcamp. I am also involved in multiple student clubs, including WIRED @ Monash<br/> <br/>
-                    I am passionate about science, technology and writing. I have experience in entrepreneurship, real estate, and managing a small business. I am currently working on a startup, Troche, and our mission is to create a solution for medication adherence. <br/> <br/>
-                    As an avid learner, I have completed 4.75 semester worth of units (19 units) in the first year and a half of my degree and maintained a WAM of 77. <br/> <br/>
+                    I am <strong>Arvin Hay</strong>.
+                    <br /> <br />
+                    As an avid learner, I have completed my degree in the span of 2 years, while maintaining a WAM of 78. <br/> <br/>
+                    I am currently developing my own company, PropRoo, building the next generation of real estate technology. <br/> <br/>
                   </p>
                 </section>
                 {/* Project Section 3 */}
@@ -232,13 +213,26 @@ function AboutpageHeader() {
                   </h1>
 
                   <div className={styles.experienceTimeline}>
+                                        {/* Example Experience */}
+                  <div className = {styles.timelineDot}></div>
+                    <div className={styles.timelineItem}>
+                      <div className={styles.timelineDate}>Dec 2024 - Present</div>
+                      <div className={styles.timelineContent}>
+                        <h1>PropRoo</h1>
+                        <h2>Director</h2>
+                        <p>
+                        • Innovating the real estate industry by developing a platform that streamlines the buying and selling process, making it more efficient and user-friendly.<br/><br/>
+                        • Collaborating with a team of experienced professionals to create a comprehensive investment strategy and real estate technology startup.<br/><br/>
+                        </p>
+                      </div>
+                    </div>
                     {/* Example Experience */}
                     <div className = {styles.timelineDot}></div>
                     <div className={styles.timelineItem}>
-                      <div className={styles.timelineDate}>Nov 2023 - Present</div>
+                      <div className={styles.timelineDate}>Nov 2023 - Nov 2024</div>
                       <div className={styles.timelineContent}>
                         <h1>Troche</h1>
-                        <h2>Fastrack Founder 2024</h2>
+                        <h2>Co-Founder</h2>
                         <p>
                         • Spearheaded the development and implementation of prototyping techniques, facilitating real-life user testing.<br/> <br/>
                         • Coached by a wide network of industry partners, including notable organizations like Next - Reece Group, Shadowboxer, Hypershift Systems, LUNA Start-up Studio, Amazon Web Services, LaunchVic, Xailient, ThinkHQ, Airwallex, etc.<br/><br/>
@@ -249,7 +243,7 @@ function AboutpageHeader() {
                     {/* Example Experience */}
                     <div className = {styles.timelineDot}></div>
                     <div className={styles.timelineItem}>
-                      <div className={styles.timelineDate}>Mar 2024 - Present</div>
+                      <div className={styles.timelineDate}>Mar 2024 - Oct 2024</div>
                       <div className={styles.timelineContent}>
                         <h1>Monash Science Student Ambassador</h1>
                         <h2>Dean Faculty of Science</h2>
@@ -312,7 +306,7 @@ function AboutpageHeader() {
 
                   <ul className={styles.educationList}>
                     <li>
-                    <div className={styles.timelineDate}>Feb 2023 - Present</div>
+                    <div className={styles.timelineDate}>Feb 2023 - Dec 2024</div>
                       <div className={styles.educationContent}>
                         <h2>Monash University, Australia</h2>
                         <h3>Bachelor of Science</h3>
@@ -322,8 +316,7 @@ function AboutpageHeader() {
                         &nbsp; - Monash Minds Leadership Coach <br/>
                         &nbsp; - Faculty of IT Programming Bootcamp Tutor <br/>
                         &nbsp; - WIRED @ IT Auxiliary <br/>
-                        &nbsp; - Achieving Potential for Distinction Scholarship <br/>
-                        Expected graduation in Feb 2025</p>
+                        &nbsp; - Achieving Potential for Distinction Scholarship <br/></p>
                       </div>
                     </li>
                     {/* Add more education entries as needed */}

@@ -1,13 +1,21 @@
 .overlay {
   position: fixed;
   inset: 0;
-  /* light: charcoal-dark, dark: pure black */
-  background: var(--ifm-color-emphasis-900);
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 9999;
   animation: fadeOverlay 0.3s ease-out 1s forwards;
+}
+
+/* Light mode styles */
+:global(.light) .overlay {
+  background-color: #f5f5f5;
+}
+
+/* Dark mode styles */
+:global(.dark) .overlay {
+  background-color: #0a0a0a;
 }
 
 .avatar {
