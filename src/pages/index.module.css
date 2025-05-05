@@ -1,36 +1,57 @@
-/**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
- */
+/** fade-in wrapper **/
+.contentWrapper {
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+}
+.contentWrapper.show {
+  opacity: 1;
+}
 
+/** your original heroBanner + responsive **/
 .heroBanner {
   padding: 4rem 0;
   text-align: center;
   position: relative;
   overflow: hidden;
-  background-size: cover /* Increase the size of the image */
+  background-size: cover;
 }
-
 @media screen and (max-width: 996px) {
   .heroBanner {
     padding: 2rem;
   }
 }
 
+/** original button row **/
 .buttons {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+/** cat GIF spacing **/
 .cat-gif {
   margin: 0 10px;
   vertical-align: middle;
 }
 
+/** “About Me” text styling **/
 .about-me {
   display: inline-block;
   vertical-align: middle;
   font-size: 1.2em;
   font-weight: bold;
+}
+
+/* adjust hero subtitle spacing (optional) */
+.hero__subtitle {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* light/dark background fallback if needed */
+:global(.theme-light) .heroBanner {
+  background-color: #f5f5f5;
+}
+:global(.theme-dark) .heroBanner {
+  background-color: #0a0a0a;
 }

@@ -1,0 +1,32 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  /* light: charcoal-dark, dark: pure black */
+  background: var(--ifm-color-emphasis-900);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  animation: fadeOverlay 0.3s ease-out 1s forwards;
+}
+
+.avatar {
+  width: 140px;
+  opacity: 0;
+  transform: scale(0.8);
+  animation: popIn 0.6s ease-out forwards;
+}
+
+@keyframes popIn {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeOverlay {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
